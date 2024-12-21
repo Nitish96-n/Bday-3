@@ -1,0 +1,68 @@
+//* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #8098ff;
+}
+
+.photo-container {
+    position: relative; /* Important for absolute positioning of children */
+    width: 80vw;
+    height: 80vh;
+    border: 2px dashed #ccc;
+    overflow: hidden; /* Ensures images don't overflow the container */
+}
+
+.photo {
+    position: absolute; /* Allows images to be positioned relative to the container */
+    width: 150px;
+    height: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+/* Specific positioning for each photo */
+.photo1 {
+    top: 10%; /* Move image to a specific top position */
+    left: 20%; /* Move image to a specific left position */
+    transform: rotate(-15deg); /* Add rotation */
+}
+
+.photo2 {
+    top: 50%;
+    left: 10%;
+    transform: rotate(10deg);
+}
+
+.photo3 {
+    top: 30%;
+    left: 60%;
+    transform: rotate(-5deg);
+}
+
+.photo4 {
+    top: 70%;
+    left: 40%;
+    transform: rotate(20deg);
+}
+
+/* Hover effect */
+.photo:hover {
+    transform: scale(1.1) rotate(0deg); /* Smooth zoom and straighten on hover */
+}
+a{
+   display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    margin: auto;
+    font-family: lora; 
+}
